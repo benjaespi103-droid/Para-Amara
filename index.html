@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños Amor de mi Vida</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="fondo-collage" id="fondoCollage">
+    <div class="collage-item"><img src="img/1.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/2.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/3.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/4.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/5.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/6.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/7.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/8.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/9.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/10.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/11.jpg" alt=""></div>
+    <div class="collage-item"><img src="img/12.jpg" alt=""></div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div id="reproductorYoutube" style="position:fixed; bottom:20px; right:20px; width:1px; height:1px; overflow:hidden; opacity:0.01; pointer-events:none;"></div>
+
+  <div class="player-ui" id="playerUI" style="display:none;">
+    <div class="player-header">
+      <div class="player-titulos">
+        <div class="player-cancion" id="playerCancion">Cargando...</div>
+        <div class="player-playlist" id="playerPlaylist">Reggaetón</div>
+      </div>
+      <div class="player-iconos">
+        <button class="icono-btn" title="Favorito">♡</button>
+      </div>
+    </div>
+
+    <div class="barra-progreso" id="barraProgreso">
+      <div class="barra-progreso-relleno" id="barraProgresoRelleno"></div>
+    </div>
+
+    <div class="tiempos">
+      <span id="tiempoActual">0:00</span>
+      <span id="tiempoTotal">0:00</span>
+    </div>
+
+    <div class="player-controles">
+      <button id="btnPrev" title="Anterior">⏮</button>
+      <button id="btnPlayPause" class="btn-play" title="Play/Pausa">⏸</button>
+      <button id="btnNext" title="Siguiente">⏭</button>
+    </div>
+
+    <div class="player-volumen">
+      <button id="btnMute" class="icono-vol">🔊</button>
+      <div class="barra-volumen" id="barraVolumen">
+        <div class="barra-volumen-relleno" id="barraVolumenRelleno" style="width: 70%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="seccion seccion-inicio" id="inicio">
+    <div class="contenido">
+      <h1 class="titulo-principal">Feliz Cumpleaños,<br><span class="nombre">Amara</span> 🎂</h1>
+      <p class="subtitulo">Espero le guste con todo mi amor para uste</p>
+      <button class="btn-comenzar" id="btnComenzar">Comenzar ✨</button>
+    </div>
+    <div class="flecha-scroll">↓</div>
+  </section>
+
+  <div class="modal-musica" id="modalMusica">
+    <div class="modal-contenido">
+      <h2>¿Quieres acompañar el momento<br>con algo de música? 🎵</h2>
+      <div class="opciones-musica">
+        <button class="btn-playlist" data-playlist="ingles">
+          <span class="icono">🎧</span>
+          <span class="texto">Música en Inglés</span>
+        </button>
+        <button class="btn-playlist" data-playlist="reggaeton">
+          <span class="icono">🔥</span>
+          <span class="texto">Reggaetón</span>
+        </button>
+      </div>
+      <button class="btn-sin-musica" id="btnSinMusica">Prefiero sin música</button>
+    </div>
+  </div>
+
+  <section class="seccion seccion-carta" id="carta">
+    <div class="carta-contenido">
+      <h2 class="titulo-seccion">Para ti 💌</h2>
+      <div class="carta">
+        <p class="texto-carta titulo-carta">Feliz Cumpleaños Amor de Mi Vida</p>
+        <p class="texto-carta">
+          Escribo esta carta para agradecer que el día de hoy hace 23 años nació una persona muy especial para mí, una persona que me enseñó a querer, que me enseñó a pensar diferente y, sobre todo, una persona que me ama; hablo de mi amarita, la mujercita que se robó mi corazón.
+        </p>
+        <p class="texto-carta">
+          Agradecer a las energías por haber unido nuestras vidas y poder ser la pareja que somos. Espero que hoy en su día reciba el mismo amor que usted da. Deseo que este año esté lleno de risas, de metas cumplidas, de más momentos juntos y que cuando sople las velas se le cumplan sus deseos, como a mí se me cumplió el mío, que era poder conocer al amor de mi vida.
+        </p>
+        <p class="texto-carta">
+          La amo con todo mi corazón.<br>
+          Me fascina completamente.<br>
+          Me tiene completamente enamorado.<br>
+          Me hace demasiado feliz.<br>
+          Me encanta su forma de ser.
+        </p>
+        <p class="texto-carta">
+          Con usted lo cotidiano se vuelve un momento especial y todo lo difícil es más fácil de sobrellevar. Muchas gracias por tanto, te amo hasta el infinito y más allá, porque el amor es lo único que somos capaces de percibir que trasciende las dimensiones del tiempo y el espacio.
+        </p>
+        <p class="texto-carta firma-carta">
+          Feliz cumpleaños, mi princesa ❤️
+        </p>
+      </div>
+    </div>
+    <div class="flecha-scroll">↓</div>
+  </section>
+
+  <section class="seccion seccion-fotos" id="fotos">
+    <div class="galeria-contenido">
+      <div class="galeria-header">
+        <h2 class="titulo-seccion">Nosotros 📸</h2>
+        <p class="frase-fotos">Algunas de las fotos que mas me gustan</p>
+      </div>
+      <div class="galeria">
+        <div class="foto-galeria"><img src="imgnuestras/imgn1.jpeg" alt="Nosotros 1"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn2.jpeg" alt="Nosotros 2"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn3.jpeg" alt="Nosotros 3"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn4.jpeg" alt="Nosotros 4"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn5.jpeg" alt="Nosotros 5"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn6.jpeg" alt="Nosotros 6"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn7.jpeg" alt="Nosotros 7"></div>
+        <div class="foto-galeria"><img src="imgnuestras/imgn8.jpeg" alt="Nosotros 8"></div>
+      </div>
+    </div>
+    <div class="flecha-scroll">↓</div>
+  </section>
+
+  <section class="seccion seccion-final" id="final">
+    <div class="final-contenido">
+      <h2 class="titulo-seccion">En desarrollo</h2>
+      <div class="candado">🔒</div>
+      <img class="final-imagen" src="imgdesarrollo/333.jpg" alt="En desarrollo">
+      <p class="mensaje-final">
+        Este último nivel está en desarrollo.<br>
+        Muy pronto estará disponible. 🎁
+      </p>
+      <p class="firma">La amo hasta el infinito y mas allaaaaaaaaaaa ❤️</p>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-cerrar" id="lightboxCerrar">×</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
